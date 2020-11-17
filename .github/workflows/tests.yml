@@ -1,0 +1,20 @@
+name: Lint code
+on: [pull_request]
+
+jobs:
+  codelint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Cache yarn dependencies
+      uses: c-hive/gha-yarn-cache@v1
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: yarn install --frozen-lockfile
+    - run: yarn test:lint
+      env:
+        CI: true
