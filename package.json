@@ -14,7 +14,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "lint": "standard --fix",
+    "test:lint": "standard",
+    "test:react": "react-scripts test",
+    "test": "run-s test:lint test:react",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "standard": "^16.0.2"
   }
 }
