@@ -13,8 +13,11 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "run-s build:tailwind start:react",
+    "start:react": "react-scripts start",
+    "build": "run-s build:tailwind build:react",
+    "build:tailwind": "postcss src/tailwind.css -o src/tailwind.generated.css",
+    "build:react": "react-scripts build",
     "lint": "standard --fix",
     "test:lint": "standard",
     "test:react": "react-scripts test",
@@ -42,6 +45,8 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.2",
     "eslint": "^7.13.0",
     "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
@@ -50,11 +55,15 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.0",
     "npm-run-all": "^4.1.5",
-    "standard": "^16.0.2"
+    "postcss": "^8.1.7",
+    "postcss-cli": "^8.3.0",
+    "standard": "^16.0.2",
+    "tailwindcss": "^2.0.1"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "yarn lint"
     }
   }
 }
