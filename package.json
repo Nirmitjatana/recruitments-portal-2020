@@ -72,8 +72,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "lint": "standard --fix",
-    "test:lint": "standard",
+    "lint": "standard \"src/**/*.js\" --fix",
+    "test:lint": "standard \"src/**/*.js\"",
     "test:react": "node scripts/test.js",
     "test": "run-s test:lint test:react"
   },
@@ -105,6 +105,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.21.5",
     "husky": "^4.3.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
     "npm-run-all": "^4.1.5",
     "standard": "^16.0.2"
   },
