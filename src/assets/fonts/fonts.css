@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "ApexLight";
+    src: url("./apex_light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApexNormal";
+    src: url("./apex_medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApexBlack";
+    src: url("./apex_black.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApexBold";
+    src: url("./apex_bold.otf") format("opentype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ApexRegular";
+    src: url("./apex_regular.otf") format("opentype");
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "FuturaBold";
+    src: url("./futura_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

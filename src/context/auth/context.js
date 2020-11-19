@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react'
 import { initialState, AuthReducer } from './reducer'
+import PropTypes from 'proptypes'
 
 const AuthStateContext = React.createContext(undefined, undefined)
 const AuthDispatchContext = React.createContext(undefined, undefined)
@@ -32,4 +33,8 @@ export const AuthProvider = ({ children }) => {
       </AuthDispatchContext.Provider>
     </AuthStateContext.Provider>
   )
+}
+
+AuthProvider.propTypes = {
+  children: PropTypes.any
 }

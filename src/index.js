@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './tailwind.generated.css'
+import './assets/fonts/fonts.css'
 import './index.css'
 import reportWebVitals from './reportWebVitals'
 import App from './App'
+import 'firebase/app'
 import { FirebaseAppProvider } from 'reactfire'
 
 const firebaseConfig = {
