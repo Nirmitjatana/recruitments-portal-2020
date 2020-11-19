@@ -7,11 +7,15 @@ Standard format for a route element:
 }
  */
 
-import { Home } from '../pages'
+import { Auth, Home } from '../pages'
 
 export const routes = [
   {
     path: '/',
     component: Home
+  },
+  {
+    path: '/auth',
+    component: Auth
   }
 ]
