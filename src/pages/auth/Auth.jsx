@@ -7,7 +7,7 @@ import Logo from '../../components/logo/Logo'
 const Auth = (props) => {
   return (
     <>
-    <Logo />
+      <Logo />
       <div className='flex flex-col h-full sm:h-auto mx-12 sm:mx-40 md:mx-auto md:w-3/6 lg:w-3/6 xl:w-2/6 justify-center items-stretch py-40'>
         <h1 className='mx-auto font-futura text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>Confirm your details</h1>
         <OutlinedTextfield
