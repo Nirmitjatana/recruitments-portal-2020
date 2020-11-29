@@ -1,0 +1,84 @@
+.mainheading{
+    font-size: 45px;
+    font-weight: 200;
+    padding-top: 15vh;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+.gridview{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* border-style: solid; */
+    width:582px;
+    margin: 20px auto;
+    text-align: center;
+    /* border-color: red; */
+}
+.box1{
+    width: 170px;
+    height: 170px;
+    border:2px solid #34A853;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    /* border-color: red; */
+    /* border-style: ; */
+    border-radius: 5px;
+}
+.primarybutton{
+    background-color: #4285F4;
+    color: white;
+    width:170px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+
+}
+.foot{
+    /* border: 1px solid red; */
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+    position: absolute;
+}
+.footprompt{
+    color: #4285F4;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+}
+.infoicon{
+    display: inline-block;
+}
+.center{
+    text-align: center;
+}
+@media (max-width:1139px){
+
+}
+@media (max-width:767px){
+    .mainheading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+    .gridview{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* border-style: solid; */
+        width:336px;
+        margin: 20px auto;
+        text-align: center;
+        /* border-color: red; */
+    }
+    .foot{
+        bottom: 30px;
+    }
+}

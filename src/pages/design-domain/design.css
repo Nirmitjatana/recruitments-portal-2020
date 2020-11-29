@@ -1,0 +1,54 @@
+.gridview1{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border-style: solid; */
+    width:380px;
+    margin: 20px auto;
+    text-align: center;
+    /* border-color: red; */
+}
+.box{
+    width: 170px;
+    height: 170px;
+    border:2px solid rgb(255, 217, 0);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    /* border-color: red; */
+    /* border-style: ; */
+    border-radius: 5px;
+}
+.boxcenter{
+    width: 170px;
+    height: 170px;
+    border:2px solid #34A853;
+    border-radius: 10px;
+    margin: 0px auto;
+    cursor: pointer;
+    /* border-color: red; */
+    /* border-style: ; */
+    border-radius: 5px;
+    text-align: center;
+}
+@media (max-width:767px){
+    .box1{
+        width: 130px;
+        height: 130px;
+        margin: 4px;
+        border-radius: 5px;
+    }
+    .gridview1{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* border-style: solid; */
+        width:280px;
+        margin: 20px auto;
+        text-align: center;
+        /* border-color: red; */
+    }
+    .boxcenter{
+        width: 130px;
+        height: 130px;
+        margin-top: -10px;
+    }
+}
