@@ -17,10 +17,10 @@ const tech = (props) => {
         <div className='box'>5</div>
         <div className='box'>6</div>
       </div>
-      <div className='center'>
-        <button className='primarybutton'>Confirm</button>
-      </div>
       <div className='foot'>
+        <div className='center'>
+          <button className='primarybutton'>Confirm</button>
+        </div>
         <img alt='img' className='infoicon' />
         <h2 className='footprompt'>You can choose more than one</h2>
       </div>

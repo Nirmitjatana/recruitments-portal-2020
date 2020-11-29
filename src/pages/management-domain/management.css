@@ -30,7 +30,7 @@
         grid-template-columns: auto auto;
         /* border-style: solid; */
         width:280px;
-        margin: 20px auto;
+        margin: 20px auto 100px;
         text-align: center;
         /* border-color: red; */
     }

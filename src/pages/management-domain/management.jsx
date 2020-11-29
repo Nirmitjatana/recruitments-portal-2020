@@ -15,10 +15,10 @@ const management = (props) => {
         <div className='box2'>3</div>
         <div className='box2'>4</div>
       </div>
-      <div className='center'>
-        <button className='primarybutton'>Confirm</button>
-      </div>
       <div className='foot'>
+        <div className='center'>
+          <button className='primarybutton'>Confirm</button>
+        </div>
         <img alt='img' className='infoicon' />
         <h2 className='footprompt'>You can choose more than one</h2>
       </div>
