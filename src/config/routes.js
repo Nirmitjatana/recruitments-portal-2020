@@ -7,7 +7,7 @@ Standard format for a route element:
 }
  */
 
-import { Auth, Home } from '../pages'
+import { Auth, Home, tech, design, management } from '../pages'
 
 export const routes = [
   {
@@ -17,5 +17,17 @@ export const routes = [
   {
     path: '/auth',
     component: Auth
+  },
+  {
+    path: '/tech',
+    component: tech
+  },
+  {
+    path: '/design',
+    component: design
+  },
+  {
+    path: '/management',
+    component: management
   }
 ]
