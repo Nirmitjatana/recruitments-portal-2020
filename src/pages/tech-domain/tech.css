@@ -24,6 +24,9 @@
     /* border-color: red; */
     /* border-style: ; */
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .primarybutton{
     background-color: #4285F4;
@@ -51,6 +54,9 @@
 }
 .infoicon{
     display: inline-block;
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
 }
 .center{
     text-align: center;
@@ -72,7 +78,6 @@
     .gridview{
         display: grid;
         grid-template-columns: auto auto auto;
-        border: 1px solid red;
         /* border-style: solid; */
         width:336px;
         margin: 40px auto 100px;
